@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aquawolf04/font-awesome-pro@5cd1511/css/all.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="crm-container">
+     
+        <div class="crm-task-list">
+            <div class="crm-active-tasks">
+                <div class="crm-section-header">
+                    <div class="crm-header-content">
+                        <h2 class="crm-section-title">Aktivni zadaci</h2>
+                        <span class="crm-badge">97</span>
+                    </div>
+                    <button class="crm-active-search-toggle">
+                        <i class="fa-light fa-magnifying-glass"></i>
+                    </button>
+                    <div class="crm-active-search">
+                        <div class="crm-active-search-wrapper">
+                            <i class="fa-light fa-magnifying-glass"></i>
+                            <input type="text" class="crm-active-search-input" placeholder="Pretraži aktivne zadatke...">
+                        </div>
+                        <button class="crm-active-search-close">
+                            <i class="fa-light fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="crm-task-items-wrapper">
+                    <div class="crm-task-item active">
+                        <div class="crm-task-icon crm-email-icon">    
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="crm-task-icon crm-lock-icon">
+                            <i class="fa-regular fa-lock"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Upit za posebnu ponudu</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ana Marić</span>
+                                <span class="crm-task-time">24.10, 09:11</span>
+                            </div>
+                        </div>
+                        <div class="crm-task-info-icon">
+                            <i class="fa-light fa-circle-info"></i>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content whatsapp-task">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Nova WhatsApp poruka</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Marko Jurić</span>
+                                <span class="crm-task-time">25.10, 10:45</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon phone-icon">
+                            <i class="fa-regular fa-phone"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Veleprodajno partnerstvo</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ivana Petrović</span>
+                                <span class="crm-task-time">26.10, 11:20</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-email-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Dogovor o suradnji</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Luka Kovač</span>
+                                <span class="crm-task-time">27.10, 08:30</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content whatsapp-task">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Povratni poziv</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Petra Horvat</span>
+                                <span class="crm-task-time">28.10, 14:00</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon phone-icon">
+                            <i class="fa-regular fa-phone"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Planiranje kampanje</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Maja Novak</span>
+                                <span class="crm-task-time">29.10, 16:15</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-email-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Izrada ponude</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Marko Perić</span>
+                                <span class="crm-task-time">30.10, 18:40</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content whatsapp-task">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Upit za sastanak</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ivana Petrović</span>
+                                <span class="crm-task-time">31.10, 09:30</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon phone-icon">
+                            <i class="fa-regular fa-phone"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Provjera statusa</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Petra Horvat</span>
+                                <span class="crm-task-time">01.11, 10:50</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-email-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Prijedlog rješenja</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Luka Kovač</span>
+                                <span class="crm-task-time">02.11, 12:15</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content whatsapp-task">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Dogovor o uvjetima</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ana Marić</span>
+                                <span class="crm-task-time">03.11, 15:30</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon phone-icon">
+                            <i class="fa-regular fa-phone"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Planiranje sastanka</span>
+                                <span class="crm-task-badge">Dodjeljen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ivana Petrović</span>
+                                <span class="crm-task-time">04.11, 17:45</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="crm-completed-tasks">
+                <div class="crm-section-header">
+                    <h2 class="crm-section-title">Završeni zadaci</h2>
+                    <span class="crm-badge">3</span>
+                    <i class="fa-solid fa-chevron-down completed-tasks-toggle"></i>
+                </div>
+                <div class="crm-completed-search">
+                    <div class="crm-search-wrapper">
+                        <i class="fa-light fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Pretraži završene zadatke..." class="crm-completed-search-input">
+                    </div>
+                </div>
+        
+                
+                <div class="completed-tasks-container">
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-email-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Upit za cijene</span>
+                               
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ivan Horvat</span>
+                                <span class="crm-task-time">23.10, 14:30</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                   
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon phone-icon">
+                            <i class="fa-regular fa-phone"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Tehnička podrška</span>
+                               
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Marko Marić</span>
+                                <span class="crm-task-time">23.10, 15:45</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Reklamacija proizvoda</span>
+                                <span class="crm-completed-badge">Završen</span>
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ana Kovač</span>
+                                <span class="crm-task-time">23.10, 16:20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Reklamacija proizvoda</span>
+                             
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ana Kovač</span>
+                                <span class="crm-task-time">23.10, 16:20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Reklamacija proizvoda</span>
+                            
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ana Kovač</span>
+                                <span class="crm-task-time">23.10, 16:20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crm-task-item">
+                        <div class="crm-task-icon crm-whatsapp-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="crm-task-content">
+                            <div class="crm-task-title">
+                                <span class="crm-task-title-text">Reklamacija auta</span>
+                            
+                            </div>
+                            <div class="crm-task-meta">
+                                <span class="crm-task-author">Ana Mijo</span>
+                                <span class="crm-task-time">23.10, 16:20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crm-details-panel">
+            <div class="crm-default-message">
+                
+                <h2>Odaberi zadatak s liste</h2>
+                <p>Kada odaberete zadatak, prikazuju se detalji o njemu</p>
+            </div>
+           
+            <div class="crm-task-details">
+                <div class="crm-details-header">
+                    <div class="crm-header-left">
+                        <div class="crm-header-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="crm-header-content">
+                            <div class="crm-header-title-row">
+                                <div class="crm-title-content">
+                                    <h1 class="crm-details-title">Upit za posebnu ponudu</h1>
+                                    <span class="crm-details-badge">Važno</span>
+                                </div>
+                                <button class="crm-button crm-button-secondary">Poveži kupca</button>
+                                <button class="crm-action-button crm-preuzmi">Preuzmi</button>
+                                <div class="crm-action-buttons" style="display: none;">
+                                    <button class="crm-button crm-button-secondary">Otpusti</button>
+                                    <button class="crm-button crm-button-suc">Završi</button>
+                                </div>
+                            </div>
+                            <div class="crm-details-created">Kreirano 24.10.2024, 09:13h</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="crm-details-info">
+                    <div class="crm-details-info-header">
+                        <div class="crm-details-name-container">
+                            <div class="crm-details-name">
+                                <i class="fa-regular fa-user"></i>
+                                <div class="crm-user-info">
+                                    <div>Ana Marić</div>
+                                    <div class="crm-user-email">a.maric@korporacija.hr</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crm-details-ticket">
+                            <i class="fa-regular fa-hashtag"></i>
+                            Ticket #email-17325222323
+                        </div>
+                    </div>
+            
+                    <div class="crm-details-contact-row">
+                        <div class="crm-details-contact-item">
+                            <i class="fa-regular fa-phone"></i>
+                            +385 98 765 4321
+                        </div>
+                        <div class="crm-details-contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+                            Email
+                        </div>
+                    </div>
+    
+                    <div class="crm-quick-actions">
+                        <button class="crm-quick-actions-toggle" id="quickActionsToggle">
+                            <i class="fa-regular fa-plus"></i>
+                            Add Quick Note
+                        </button>
+                        
+                        <div class="crm-quick-actions-form collapsed" id="quickActionsForm">
+                            <textarea id="quickNote" placeholder="Add a quick note..."></textarea>
+                            <div class="crm-note-actions">
+                                <div class="crm-file-upload">
+                                    <input type="file" id="fileUpload" multiple class="crm-file-input">
+                                    <label for="fileUpload" class="crm-file-label">
+                                        <i class="fa-regular fa-paperclip"></i>
+                                        Attach Files
+                                    </label>
+                                </div>
+                                <button type="button" class="crm-send-note">
+                                    <i class="fa-regular fa-paper-plane-top"></i>
+                                    Send
+                                </button>
+                            </div>
+                            <div id="attachedFiles" class="crm-attached-files"></div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="crm-details-messages">
+                    <div class="crm-mailConversation">
+                     
+                      <div class="crm-mailConversation__earlier">3 prethodna maila</div>
+    
+                      <div class="crm-mailConversation__previous">
+                       
+                      </div>
+                      <div class="crm-mailConversation__background-layers">
+                        <div class="crm-mailConversation__layer"></div>
+                        <div class="crm-mailConversation__layer"></div>
+                        <div class="crm-mailConversation__layer"></div>
+                      </div>
+                    
+                      <div class="crm-mailConversation__stack">
+                       
+                        <div class="crm-mailConversation__current">
+                            <div class="crm-mailConversation__message">
+                                <div class="crm-mailConversation__header">
+                                  <div class="crm-mailConversation__author-wrapper">
+                                   
+                                    <span class="crm-avatar"></span>
+                                    <div>
+                                      <div class="crm-mailConversation__author">Ana Marić</div>
+                                      <div class="crm-mailConversation__email">a.maric@korporacija.hr</div>
+                                    </div>
+                                  </div>
+                                  <div class="crm-mailConversation__actions">
+                                    <div class="crm-mailConversation__time">20.11.2024, 08:10h</div>
+                                   
+                                  </div>
+                                </div>
+                                <div class="crm-mailConversation__content">
+                                  <p >Poštovani, </p>
+                                  <p>
+          
+                                      Zanimaju me vaše korporativne ponude za nadolazeće blagdane. Možete li mi poslati više informacija?
+                                      
+                                    <br>
+                                     </p>
+                                  <p>Lijep pozdrav,<br> Ana Marić</p>
+                                </div>
+                                <span class="crm-hr_dev"></span>
+                                <div class="crm-mailConversation__attachments">
+                                 
+                                  <div class="crm-mailConversation__attachment">
+                                   
+                                      <p class="crm-text-muted">Attachments</p>
+          
+                                      <div class="crm-cursor-pointer">
+                                             <i class="fa-regular fa-paperclip"></i>
+                                            <a href="#" class="crm-mailConversation__attachment-link">report.xlsx</a>
+          
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+    
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+              <div class="crm-notification-container">
+                <div class="crm-notification-card">
+                    <div class="crm-notification-header">
+                        <div class="crm-notification-title">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Nova poruka od Marija Jurić
+                        </div>
+                        <button class="crm-notification-close">
+                            <i class="fa-regular fa-x"></i>
+                        </button>
+                    </div>
+                    <p class="crm-notification-subtitle">Nova WhatsApp poruka</p>
+                    <div class="crm-notification-actions">
+                        <button class="crm-notification-button crm-button-primary">Pregledaj</button>
+                        <button class="crm-notification-button crm-button-kasnije">Kasnije</button>
+                    </div>
+                </div>
+             </div>
+            
+
+             <div class="crm-details-footer">
+                <i class="fa-regular fa-envelope"></i>
+                <div class="crm-footer-content">
+                    <span class="crm-footer-text">Upit za posebnu ponudu</span>
+                    <span class="crm-footer-action">
+                        Odgovori
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="crm-reply-editor">
+               
+               
+        
+                <textarea class="crm-editor-textarea" placeholder="Napiši odgovor..."></textarea>
+        
+                <div class="crm-editor-footer">
+                    <button class="crm-attachments-btn">
+                        <i class="fa-solid fa-paperclip"></i>
+                        Privitak
+                    </button>
+                    <button class="crm-send-btn">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Pošalji
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="crm-info-panel">
+            
+            <div class="crm-info-section">
+                <h3 class="crm-info-title">Podaci o kupcu</h3>
+                <div class="crm-info-grid">
+                    <div class="crm-info-label">Šifra lokacije:</div>
+                    <div class="crm-info-value">333026 007</div>
+                    
+                    <div class="crm-info-label">Telefon:</div>
+                    <div class="crm-info-value">01/6679-142</div>
+                    
+                    <div class="crm-info-label">Fax:</div>
+                    <div class="crm-info-value">01/6679-142</div>
+                    
+                    <div class="crm-info-label">Skladište:</div>
+                    <div class="crm-info-value">Centralno skladište ZG</div>
+                    
+                    <div class="crm-info-label">Kontrolor:</div>
+                    <div class="crm-info-value">001 Marko Marulić</div>
+                    
+                    <div class="crm-info-label">Obilazak:</div>
+                    <div class="crm-info-value">43</div>
+                </div>
+            </div>
+        
+            <div class="crm-info-section">
+                <h3 class="crm-info-title">Boniteti</h3>
+                <div class="crm-info-grid">
+                    <div class="crm-info-label">Ukupan dug (153):</div>
+                    <div class="crm-info-value">3.454.048,06 HRK</div>
+                    
+                    <div class="crm-info-label">Dospjeli dug (64):</div>
+                    <div class="crm-info-value crm-info-value-highlight">1.447.989,40 HRK</div>
+                    
+                    <div class="crm-info-label">Starost duga:</div>
+                    <div class="crm-info-value">1022 dan(a)</div>
+                </div>
+        
+                <div class="crm-info-subsection">
+                    <div class="crm-turnover-item">
+                        <span>61 - 90</span>
+                        <span>173.558,28 HRK</span>
+                    </div>
+                    <div class="crm-turnover-item">
+                        <span>181 - 10000</span>
+                        <span>51.346,40 HRK</span>
+                    </div>
+                    <div class="crm-turnover-item">
+                        <span>31 - 60</span>
+                        <span>836.815,04 HRK</span>
+                    </div>
+                    <div class="crm-turnover-item">
+                        <span>91 - 180</span>
+                        <span>81.452,04 HRK</span>
+                    </div>
+                    <div class="crm-turnover-item">
+                        <span>16 - 30</span>
+                        <span>304.817,64 HRK</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="crm-info-section">
+                <h3 class="crm-info-title">Prometi</h3>
+                <div class="crm-info-grid">
+                    <div class="crm-info-label">Zadnja narudžba:</div>
+                    <div class="crm-info-value">04.08.2024</div>
+                    
+                    <div class="crm-info-label">01.03. - 19.08.</div>
+                    <div class="crm-info-value">2971.199 KT</div>
+                    
+                    <div class="crm-info-label">01.06. - 19.08.</div>
+                    <div class="crm-info-value">1874.199 KT</div>
+                    
+                    <div class="crm-info-label">01.08. - 19.08.</div>
+                    <div class="crm-info-value">1018.199 KT</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+    <script>
+        document.querySelector('.crm-details-footer').addEventListener('click', function() {
+            document.querySelector('.crm-reply-editor').classList.toggle('active');
+        });
+    </script>
+
+    <script src="email.js">
+    </script>
+     <script src="task.js"></script>
+     <script src="notifikacija.js"></script>
+     <script src="script.js"></script>
+</body>
+</html>
